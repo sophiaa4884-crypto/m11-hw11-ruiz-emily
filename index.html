@@ -1,13 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Assignment</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Assignment – About Me</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        background-color: #f8f9fa;
+      }
+
+      .hero {
+        background: linear-gradient(
+          135deg,
+          rgba(13, 110, 253, 0.08),
+          rgba(25, 135, 84, 0.08)
+        );
+      }
+
+      .section-title {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 600;
+        color: #0d6efd;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <body id="top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#top">Emily Ruiz</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hobbies">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#interests">Interests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#goals">Career Goals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-7">
+            <p class="section-title mb-2">Welcome</p>
+            <h1 class="fw-bold mb-3">Hello, I’m Emily Ruiz</h1>
+            <p class="lead mb-4">
+              I am a dedicated student with a strong interest in public
+              interest communication, strategic storytelling, and digital media.
+              This page shares my academic interests, hobbies, and career goals
+              in a professional and academic context.
+            </p>
+
+            <a href="#goals" class="btn btn-primary btn-lg me-2 mb-2">
+              View Career Goals
+            </a>
+            <a href="#contact" class="btn btn-outline-secondary btn-lg mb-2">
+              Connect With Me
+            </a>
+          </div>
+
+          <div class="col-md-5 text-center">
+            <div
+              class="rounded-circle bg-white shadow p-4 mx-auto"
+              style="max-width: 260px;"
+            >
+              <div
+                class="rounded-circle bg-secondary bg-opacity-10 d-flex align-items-center justify-content-center"
+                style="height: 200px;"
+              >
+                <span class="fw-semibold text-secondary">Photo Placeholder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <p class="section-title mb-2">About Me</p>
+        <h2 class="mb-4">Academic Background</h2>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <p>
+              I am currently pursuing my degree in communication with a focus on
+              public interest communication and strategic messaging. I enjoy
+              courses that blend research, writing, and design, especially those
+              that explore how campaigns can create positive social impact.
+            </p>
+            <p>
+              In team projects, I often take the lead on organizing timelines,
+              clarifying goals, and transforming research into clear messages
+              and visuals. I value professionalism, reliability, and strong
+              collaboration skills.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p>
+              Alongside my coursework, I continue building my skills in digital
+              tools such as Adobe Creative Cloud, basic HTML/CSS, and content
+              management platforms. These skills help me connect strategic
+              thinking with practical execution.
+            </p>
+            <p>
+              I am committed to ethical communication, transparency, and
+              audience-centered storytelling—principles that guide my academic
+              work and future career interests.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies" class="py-5 bg-white">
+      <div class="container">
+        <p class="section-title mb-2">Hobbies</p>
+        <h2 class="mb-4">How I Spend My Free Time</h2>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Reading & Research</h5>
+                <p class="card-text">
+                  I enjoy reading books, articles, and case studies on media,
+                  ethics, and social issues. This helps me stay informed and
+                  apply real-world examples to my coursework and projects.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Creative Design</h5>
+                <p class="card-text">
+                  I like working on small design projects, such as mock social
+                  media campaigns or simple web layouts. These projects let me
+                  experiment with typography, color, and composition in a
+                  low-stakes, creative way.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Wellness & Balance</h5>
+                <p class="card-text">
+                  I make time for walks, time with friends and family, and
+                  hobbies that help me recharge. Maintaining balance supports my
+                  focus, creativity, and overall academic performance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interests" class="py-5">
+      <div class="container">
+        <p class="section-title mb-2">Interests</p>
+        <h2 class="mb-4">Academic & Professional Interests</h2>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h5 class="mb-2">Public Interest Communication</h5>
+            <p>
+              I am interested in how strategic communication can be used to
+              promote social change, support nonprofits, and engage communities
+              on important issues.
+            </p>
+            <ul class="mb-0">
+              <li>Campaign planning and evaluation</li>
+              <li>Stakeholder engagement and research</li>
+              <li>Ethical and transparent messaging</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <h5 class="mb-2">Digital Media & Storytelling</h5>
+            <p>
+              I enjoy exploring how visual design, writing, and digital tools
+              work together to tell clear, compelling stories.
+            </p>
+            <ul class="mb-0">
+              <li>Digital content creation</li>
+              <li>Basic web and UX design</li>
+              <li>Social media strategy and analytics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="goals" class="py-5 bg-white">
+      <div class="container">
+        <p class="section-title mb-2">Career Goals</p>
+        <h2 class="mb-4">Looking Ahead</h2>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Short-Term</h5>
+                <p class="card-text">
+                  In the short term, I plan to deepen my skills through
+                  coursework, class projects, and internships that focus on
+                  communication strategy and digital media.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Mid-Term</h5>
+                <p class="card-text">
+                  After graduation, I hope to work with organizations or
+                  agencies that design campaigns for social good, managing
+                  content and supporting research-driven communication efforts.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Long-Term</h5>
+                <p class="card-text">
+                  Long term, I would like to grow into a leadership role where I
+                  can guide communication strategies, mentor students or early
+                  professionals, and help organizations communicate responsibly
+                  and effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5">
+      <div class="container">
+        <p class="section-title mb-2">Contact</p>
+        <h2 class="mb-4">Let’s Connect</h2>
+
+        <div class="row g-4">
+          <div class="col-md-8">
+            <p>
+              I welcome opportunities to connect about academic projects,
+              internships, or professional interests related to communication
+              and digital media. Feel free to reach out by email or connect on
+              LinkedIn.
+            </p>
+          </div>
+          <div class="col-md-4 d-flex align-items-center">
+            <div class="w-100">
+              <a
+                href="mailto:youremail@example.com"
+                class="btn btn-primary mb-2 w-100"
+                >Email Me</a
+              >
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                class="btn btn-outline-secondary w-100"
+                >LinkedIn Profile</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-3 bg-dark text-white-50">
+      <div class="container text-center">
+        <small>&copy; 2025 Emily Ruiz. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
